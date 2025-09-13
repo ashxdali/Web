@@ -1,0 +1,14 @@
+new file:
+git init
+git add .
+git commit -m "any message"
+create a repo int hub
+git remote add origin https://github.com/ashxdali/Web.git
+git branch -M main
+git push -u origin main
+
+
+already  initialised one done:
+git add .
+git commit -m "any message"
+git push -u origin main  
