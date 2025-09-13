@@ -6,85 +6,66 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
-<body style="background-color: rgb(52, 53, 52);">
+<body style="background-color: rgb(255, 255, 255);">
   <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-primary py-3;" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">EXCEL BATTERIES</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <center>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
-        </li>
-      
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" 
+       style="background: linear-gradient(90deg, #0d6efd, #6610f2); padding: 0.8rem 1rem;">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold fs-4 text-uppercase" href="#" style="letter-spacing: 1px;">
+        ⚡ Excel Batteries
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active px-3 fw-semibold" href="#">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu shadow border-0 rounded-3">
+              <li><a class="dropdown-item" href="#">Auto Motive Batteries</a></li>
+              <li><a class="dropdown-item" href="#">Tubular Batteries</a></li>
+              <li><a class="dropdown-item" href="#">UPS & Inverter Batteries</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Vehicle</a>
+            <ul class="dropdown-menu shadow border-0 rounded-3">
+              <li><a class="dropdown-item" href="#">Two Wheeler</a></li>
+              <li><a class="dropdown-item" href="#">Four Wheeler</a></li>
+              <li><a class="dropdown-item" href="#">Commercial Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Passenger Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Inverter & Batteries</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Side Icons -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="me-3 text-success fs-5"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="me-3 text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:+1234567890" class="text-light text-decoration-none d-flex align-items-center">
+            <i class="bi bi-telephone me-1 fs-5"></i>
+            <span>1234567890</span>
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Auto Motive Batteries</a></li>
-            <li><a class="dropdown-item" href="#">Tubular Batteries</a></li>
-            <li><a class="dropdown-item" href="#">UPS and Inverter Batteries</a></li>
-            <!--<li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Vehicle
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Two Wheeler</a></li>
-            <li><a class="dropdown-item" href="#">Four Wheeler</a></li>
-            <li><a class="dropdown-item" href="#">Commercial Vehicles</a></li>
-            <li><a class="dropdown-item" href="#">Passenger Vehicles</a></li>
-            <li><a class="dropdown-item" href="#">Inverter and Batteries</a></li>
-          </ul>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-        </li>
-      </ul>
-       
-    </center> 
-      
-<!-- WHATSAPP | CALL | MAIL -->
-<div style="display: flex; align-items: center;">
- <a href="" class="me-3 text-success"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-</svg></a>
-
-<a class="me-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-</svg></a>
-
-
-<a class="text-light" style="text-decoration: none;" href="tel:+12 34 56 78 90"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg> 
-<span>1234567890</span>
-</a>
-
-
-
-</div>
- 
-
-
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-    </header>
+  </nav>
+</header>
+
 <!-- SLIDER -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -115,96 +96,218 @@
 </div>
     
 
-<!-- CARDS-->
-<div class="row container" > 
 
-<div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="..."  height="250px">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
+<!-- /ICONS -->
+
+<div class="container-fluid my-5" style="background-color: rgb(255, 255, 255);">
+  <u style="color: rgb(72, 180, 60);"><h4 class="text-center mb-4" style="color: black;">Select your category</h4></u>
+  <div class="row text-center">
+    
+     <div class="col-6 col-md-3 col-lg-1">
+      
+    </div>
+
+ <div class="col-6 col-md-3 col-lg-1">
+     
+    </div>
+
+
+    <!-- Column 1 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="two-wheelers.html" class="text-decoration-none text-dark">
+        <img src="./images/Two-Wheeler.png" alt="Two Wheelers" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Two Wheelers</p>
+      </a>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="three-wheelers.html" class="text-decoration-none text-dark">
+        <img src="/images/Three-Wheeler.png" alt="Three Wheelers" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Three Wheelers</p>
+      </a>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="passenger.html" class="text-decoration-none text-dark">
+        <img src="/images/Passanger-Veehicle.png" alt="Passenger Vehicles" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Passenger Vehicles</p>
+      </a>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="commercial.html" class="text-decoration-none text-dark">
+        <img src="/images/Commercial-Vehicle.png" alt="Commercial Vehicles" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Commercial Vehicles</p>
+      </a>
+    </div>
+
+    <!-- Column 5 -->
+    <!-- <div class="col-6 col-md-3 col-lg-1">
+      <a href="farm.html" class="text-decoration-none text-dark">
+        <img src="/images/" alt="Farm Vehicles" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Farm Vehicles</p>
+      </a>
+    </div> -->
+
+    <!-- Column 6 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="inverters.html" class="text-decoration-none text-dark">
+        <img src="/images/Invrtor-battery.png" alt="Inverters & Batteries" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Inverters & Batteries</p>
+      </a>
+    </div>
+
+    <!-- Column 7 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="e-vehicles.html" class="text-decoration-none text-dark">
+        <img src="/images/E-rikshaw.png" alt="E-Vehicles" class="img-fluid mb-2" style="max-width:60px;">
+        <p>E-Vehicles</p>
+      </a>
+    </div>
+
+    <!-- Column 8 -->
+    <div class="col-6 col-md-3 col-lg-1">
+      <a href="other.html" class="text-decoration-none text-dark">
+        <img src="/images/other-application.png" alt="Other Applications" class="img-fluid mb-2" style="max-width:60px;">
+        <p>Other Applications</p>
+      </a>
+    </div>
+
   </div>
- </div>
-
-<div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- <div class="card m-3" style="width: 18rem; background: #ffffff; color: rgb(0, 0, 0);">
-  <img src="./images/card1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">AMARON PRO Bike Rider 2 Wheeler Battery - 12APBTX50 (ABR-PR-12APBTX50)</h5>
-    <h5>Price: ₹1517</h5>
-    <a href="#" class="btn btn-warning">Add to Cart</a>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-  </div>
- </div>
-
- 
-
 </div>
+
+
+
+<!-- CARDS-->
+<!-- <div class="row container"  >  -->
+<!-- 
+<div class="container my-4">
+<div class="d-flex justify-content-center flex-wrap">
+
+<div class="card m-3 shadow-lg border-0 rounded-4" style="width: 20rem; background: #f8f9fa; color: #212529; transition: transform 0.3s, box-shadow 0.3s;">
+  <img src="./images/card1.png" class="card-img-top p-3" alt="Battery Image" style="height: 220px; object-fit: contain;">
+  
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title fw-bold text-dark">AMARON PRO Bike Rider 2 Wheeler Battery</h5>
+    <p class="text-muted small mb-2">Model: 12APBTX50 (ABR-PR-12APBTX50)</p>
+    <h5 class="text-success fw-bold mb-3">Price: ₹1517</h5>
+    
+    <div class="mt-auto">
+      <a href="#" class="btn btn-warning me-2 rounded-3 px-3">Add to Cart</a>
+      <a href="#" class="btn btn-primary rounded-3 px-3">Buy Now</a>
+    </div>
+  </div>
+</div>
+</div>
+</div> -->
+
+<div class="container my-4">
+  <div class="d-flex justify-content-center flex-wrap" id="cardContainer">
+    <!-- Cards will be injected here by JS -->
+  </div>
+</div>
+
+<script>
+  // Array of products
+  const products = [
+    {
+      title: "AMARON PRO Bike Rider 2 Wheeler Battery",
+      model: "12APBTX50 (ABR-PR-12APBTX50)",
+      price: "₹1517",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Car Battery",
+      model: "AM-CR-55D23L",
+      price: "₹4850",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Truck Battery",
+      model: "TRK-150AH",
+      price: "₹10500",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    }
+    // 👉 Just keep adding more objects here for new cards
+  ];
+
+  // Reference to container
+  const container = document.getElementById("cardContainer");
+
+  // Loop and generate cards
+  products.forEach(product => {
+    const card = `
+      <div class="card m-3 shadow-lg border-0 rounded-4" 
+           style="width: 20rem; background: #f8f9fa; color: #212529; transition: transform 0.3s, box-shadow 0.3s;">
+        <img src="${product.image}" class="card-img-top p-3" alt="${product.title}" 
+             style="height: 220px; object-fit: contain;">
+        
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold text-dark">${product.title}</h5>
+          <p class="text-muted small mb-2">Model: ${product.model}</p>
+          <h5 class="text-success fw-bold mb-3">Price: ${product.price}</h5>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-warning me-2 rounded-3 px-3">Add to Cart</a>
+            <a href="#" class="btn btn-primary rounded-3 px-3">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    `;
+    container.innerHTML += card;
+  });
+</script>
+
+
+
+<img src="images/homepgbanner.png " style="width: 100%;"  alt="...">
+
+
+
+
 
 <!-- FOOTER-->
  
-    <footer>
+    <footer >
         <div class="footer-top">
             <div class="container">
                 <div class="footer-day-time">
@@ -225,9 +328,12 @@
                 <div class="row">
                     <div class="col-lg-4">
                         
-                        <h4>About us</h4>
-                        <p>Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Branche Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Branche  </p>
-
+                        <h4>Address</h4>
+                        <h6>Sarovaram bio park road</h6>
+                        <h6>Eranhippalam</h6>
+                        <h6>Kozhikode</h6>
+                        <h6>Kerala</h6>
+                        <h6>673020</h6>
                     </div>
 
                     <div class="col-md-4">

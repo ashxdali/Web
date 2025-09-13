@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+  <!-- NAVBAR -->
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" 
+       style="background: linear-gradient(90deg, #0d6efd, #6610f2); padding: 0.8rem 1rem;">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold fs-4 text-uppercase" href="#" style="letter-spacing: 1px;">
+        ⚡ Excel Batteries
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active px-3 fw-semibold" href="#">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu shadow border-0 rounded-3">
+              <li><a class="dropdown-item" href="#">Auto Motive Batteries</a></li>
+              <li><a class="dropdown-item" href="#">Tubular Batteries</a></li>
+              <li><a class="dropdown-item" href="#">UPS & Inverter Batteries</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Vehicle</a>
+            <ul class="dropdown-menu shadow border-0 rounded-3">
+              <li><a class="dropdown-item" href="#">Two Wheeler</a></li>
+              <li><a class="dropdown-item" href="#">Four Wheeler</a></li>
+              <li><a class="dropdown-item" href="#">Commercial Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Passenger Vehicles</a></li>
+              <li><a class="dropdown-item" href="#">Inverter & Batteries</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3 fw-semibold" href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Side Icons -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="me-3 text-success fs-5"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="me-3 text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:+1234567890" class="text-light text-decoration-none d-flex align-items-center">
+            <i class="bi bi-telephone me-1 fs-5"></i>
+            <span>1234567890</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<img src="images/inverterbanner.png" style="width: 100%;"  alt="...">
+
+
+<!-- CARDS-->
+
+<div class="container my-4">
+  <div class="d-flex justify-content-center flex-wrap" id="cardContainer">
+    <!-- Cards will be injected here by JS -->
+  </div>
+</div>
+
+<script>
+  // Array of products
+  const products = [
+    {
+      title: "AMARON PRO Bike Rider 2 Wheeler Battery",
+      model: "12APBTX50 (ABR-PR-12APBTX50)",
+      price: "₹1517",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Car Battery",
+      model: "AM-CR-55D23L",
+      price: "₹4850",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Truck Battery",
+      model: "TRK-150AH",
+      price: "₹10500",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    }
+    // 👉 Just keep adding more objects here for new cards
+  ];
+
+  // Reference to container
+  const container = document.getElementById("cardContainer");
+
+  // Loop and generate cards
+  products.forEach(product => {
+    const card = `
+      <div class="card m-3 shadow-lg border-0 rounded-4" 
+           style="width: 20rem; background: #f8f9fa; color: #212529; transition: transform 0.3s, box-shadow 0.3s;">
+        <img src="${product.image}" class="card-img-top p-3" alt="${product.title}" 
+             style="height: 220px; object-fit: contain;">
+        
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold text-dark">${product.title}</h5>
+          <p class="text-muted small mb-2">Model: ${product.model}</p>
+          <h5 class="text-success fw-bold mb-3">Price: ${product.price}</h5>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-warning me-2 rounded-3 px-3">Add to Cart</a>
+            <a href="#" class="btn btn-primary rounded-3 px-3">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    `;
+    container.innerHTML += card;
+  });
+</script>
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</html>
