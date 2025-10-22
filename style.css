@@ -156,3 +156,62 @@ footer .social-icon li i:hover {
 .copyright {
     font-size: 18px;
 }   
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+ .quote-banner {
+    position: relative;
+    background: url("./images/excel cover image.png") center center/cover no-repeat;
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto
+  }
+
+  /* Overlay for readability */
+  .quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem;
+    background: rgba(0, 0, 0, 0.45); /* dark transparent layer */
+    border-radius: 20px;
+  }
+
+  /* Text Shadow for glow effect */
+  .text-shadow {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 600px) {
+    .quote-banner {
+      height: 600px;
+    }
+    .quote-overlay {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .quote-overlay h2 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+    .quote-overlay p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+
+
