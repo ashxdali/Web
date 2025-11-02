@@ -1,0 +1,98 @@
+AUTOMATIC CARD
+
+
+
+<div class="container my-4">
+  <div class="d-flex justify-content-center flex-wrap" id="cardContainer">
+    <!-- Cards will be injected here by JS -->
+  </div>
+</div>
+
+<script>
+  // Array of products
+  const products = [
+    {
+      title: "AMARON PRO Bike Rider 2 Wheeler Battery",
+      model: "12APBTX50 (ABR-PR-12APBTX50)",
+      price: "₹1517",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Car Battery",
+      model: "AM-CR-55D23L",
+      price: "₹4850",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Truck Battery",
+      model: "TRK-150AH",
+      price: "₹10500",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+    {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    },
+        {
+      title: "AMARON Inverter Battery",
+      model: "IN-150AH",
+      price: "₹9200",
+      image: "./images/card1.png"
+    }
+    // 👉 Just keep adding more objects here for new cards
+  ];
+
+  // Reference to container
+  const container = document.getElementById("cardContainer");
+
+  // Loop and generate cards
+  products.forEach(product => {
+    const card = `
+      <div class="card m-3 shadow-lg border-0 rounded-4" 
+           style="width: 20rem; background: #f8f9fa; color: #212529; transition: transform 0.3s, box-shadow 0.3s;">
+        <img src="${product.image}" class="card-img-top p-3" alt="${product.title}" 
+             style="height: 220px; object-fit: contain;">
+        
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold text-dark">${product.title}</h5>
+          <p class="text-muted small mb-2">Model: ${product.model}</p>
+          <h5 class="text-success fw-bold mb-3">Price: ${product.price}</h5>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-warning me-2 rounded-3 px-3">Add to Cart</a>
+            <a href="#" class="btn btn-primary rounded-3 px-3">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    `;
+    container.innerHTML += card;
+  });
+</script>
+80-200- comm
+35-100-comm

@@ -4,7 +4,9 @@
     color: rgb(18, 116, 202);
 }
 
-
+#navbarSupportedContent ul li a{
+    color: rgb(255, 255, 255);
+}
 
 footer {
     color: #fff;
@@ -215,3 +217,49 @@ footer .social-icon li i:hover {
 
 
 
+ .custom-card {
+    width: 100%;
+    max-width: 22rem;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #ffffff;
+  }
+
+  .custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  .img-container {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    padding: 10px;
+  }
+
+  .card-img-top {
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* ensures full image is visible */
+  }
+
+  .card-title {
+    color: #000000;
+  }
+
+  @media (max-width: 768px) {
+    .custom-card {
+      max-width: 20rem;
+    }
+
+    .img-container {
+      height: 200px;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+    }
+  }
