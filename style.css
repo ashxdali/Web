@@ -173,7 +173,7 @@ footer .social-icon li i:hover {
     position: relative;
     background: url("./images/excel cover image.png") center center/cover no-repeat;
     height: 450px;
-    width: 450px;
+    max-width: 450px;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto
