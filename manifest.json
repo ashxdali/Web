@@ -1,0 +1,20 @@
+{
+  "name": "Excel Batteries",
+  "short_name": "Excel Batteries",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1274ca",
+  "icons": [
+    {
+      "src": "images/excel_logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/excel_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
