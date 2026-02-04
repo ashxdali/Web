@@ -1,167 +1,191 @@
-#add{
-    width:400px;
-    height: 100px;
-    color: rgb(18, 116, 202);
+#add {
+  width: 400px;
+  height: 100px;
+  color: rgb(18, 116, 202);
 }
 
-#navbarSupportedContent ul li a{
-    color: rgb(255, 255, 255);
+#navbarSupportedContent ul li a {
+  color: #000;
 }
 
 footer {
-    color: #fff;
+  color: #fff;
 }
+
 ul {
-    padding: 0px;
+  padding: 0px;
 }
-ol, ul {
-    margin-bottom: 0px;
+
+ol,
+ul {
+  margin-bottom: 0px;
 }
 
 .social-icon {
-    padding: 0;
-    margin-bottom: 0px;
-        float: right;
+  padding: 0;
+  margin-bottom: 0px;
+  float: right;
 }
 
 .social-icon li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
+
 .social-icon li i {
-    font-size: 14px;
-    color: #262725;
-    border: solid 2px #ffffff;
-    height: 31px;
-    width: 31px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 100px;
-    line-height: 27px;
-    margin-right: 15px;
-    transition: 1s;
-    background: #fff;
+  font-size: 14px;
+  color: #262725;
+  border: solid 2px #ffffff;
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  line-height: 27px;
+  margin-right: 15px;
+  transition: 1s;
+  background: #fff;
 }
+
 .social-icon li i:hover {
-    border: solid 2px #262725;
-    color: #ffffff;
-    background: #262725;
+  border: solid 2px #262725;
+  color: #ffffff;
+  background: #262725;
 }
 
 .phone-no i {
-    position: relative;
-    margin-right: 14px;
-    font-size: 43px;
-    top: 5px;
+  position: relative;
+  margin-right: 14px;
+  font-size: 43px;
+  top: 5px;
 }
+
 .phone-no {
-    margin-top: -22px;
-    text-align: right;
+  margin-top: -22px;
+  text-align: right;
 }
+
 .footer-day-time {
-    padding-bottom: 30px;
-    border-bottom: 2px solid #7a6f6f;
-    padding-top: 14px;
-    margin-bottom: 55px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #7a6f6f;
+  padding-top: 14px;
+  margin-bottom: 55px;
 }
+
 .footer-day-time ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
+
 .footer-day-time ul li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
+
 .phone-no a {
-    color: #fff;
-    font-family: PlayfairDisplay-Black;
-    font-size: 34px;
-    font-weight: bold;
+  color: #fff;
+  font-family: PlayfairDisplay-Black;
+  font-size: 34px;
+  font-weight: bold;
 }
+
 .footer-top {
-    background: #2f2f2f;
-    padding:50px 0 50px;
+  background: #2f2f2f;
+  padding: 50px 0 50px;
 }
+
 .footer-top h4 {
-    font-size: 19px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
+
 .footer-top p {
-    font-size: 13px;
-    line-height: 2;
+  font-size: 13px;
+  line-height: 2;
 }
 
 footer p {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
+
 .footer-logo {
-    display: block;
-    margin-bottom: 32px;
+  display: block;
+  margin-bottom: 32px;
 }
+
 .address1 li {
-    list-style: none;
-    position: relative;
-    padding: 0px 0 14px 34px;
-    line-height: 26px;
+  list-style: none;
+  position: relative;
+  padding: 0px 0 14px 34px;
+  line-height: 26px;
 }
+
 ul.address1 span {
-    position: absolute;
-    width: 40px;
-    max-width: 40px;
-    left: 0;
+  position: absolute;
+  width: 40px;
+  max-width: 40px;
+  left: 0;
 }
+
 .address1 li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
+
 ul.address1 i {
-    width: 20px;
-    position: absolute;
-    left: 0px;
-    text-align: center;
-    font-size: 28px;
-    top: 0;
+  width: 20px;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  font-size: 28px;
+  top: 0;
 }
 
 ul.address1 i.fa-envelope {
-    font-size: 18px;
-    top: 4px;
+  font-size: 18px;
+  top: 4px;
 }
+
 footer ul.social-icon {
-    float: left;
+  float: left;
 }
+
 footer .social-icon li i:hover {
-    background: #4b8800;
-    border-color: #4b8800;
+  background: #4b8800;
+  border-color: #4b8800;
 }
 
 .footer-bottom {
-    background: #4b8800;
-    padding: 10px 0px;
+  background: #4b8800;
+  padding: 10px 0px;
 }
+
 .footer-bottom ul li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
+  display: inline;
+  margin-right: 20px;
+  font-size: 18px;
 }
-.footer-bottom ul li a{
-    color:#fff;
+
+.footer-bottom ul li a {
+  color: #fff;
 }
 
 .footer-bottom ul {
-    float: right;
+  float: right;
 }
 
 .footer-bottom ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
+
 .copyright {
-    font-size: 18px;
-}   
+  font-size: 18px;
+}
 
 .navbar-brand img {
   transition: transform 0.3s ease;
 }
+
 .navbar-brand:hover img {
   transform: scale(1.05);
 }
@@ -169,149 +193,157 @@ footer .social-icon li i:hover {
 
 
 
- .quote-banner {
-    position: relative;
-    background: url("./images/excel cover image.png") center center/cover no-repeat;
-    height: 450px;
-    max-width: 450px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0 auto
+.quote-banner {
+  position: relative;
+  background: url("./images/excel cover image.png") center center/cover no-repeat;
+  height: 450px;
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto
+}
+
+/* Overlay for readability */
+.quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 3rem;
+  background: rgba(0, 0, 0, 0.45);
+  /* dark transparent layer */
+  border-radius: 20px;
+}
+
+/* Text Shadow for glow effect */
+.text-shadow {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .quote-banner {
+    height: 600px;
   }
 
-  /* Overlay for readability */
   .quote-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 2rem 3rem;
-    background: rgba(0, 0, 0, 0.45); /* dark transparent layer */
-    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
   }
 
-  /* Text Shadow for glow effect */
-  .text-shadow {
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  .quote-overlay h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
 
-  /* Mobile Responsive */
-  @media (max-width: 600px) {
-    .quote-banner {
-      height: 600px;
-    }
-    .quote-overlay {
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .quote-overlay h2 {
-      font-size: 1.4rem;
-      line-height: 1.4;
-    }
-    .quote-overlay p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+  .quote-overlay p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
+}
 
 
 
- .custom-card {
-    width: 100%;
-    max-width: 22rem;
-    border-radius: 18px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    background: #ffffff;
-  }
+.custom-card {
+  width: 100%;
+  max-width: 22rem;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #ffffff;
+}
 
-  .custom-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.img-container {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  padding: 10px;
+}
+
+.card-img-top {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  /* ensures full image is visible */
+}
+
+.card-title {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    max-width: 20rem;
   }
 
   .img-container {
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;
-    padding: 10px;
-  }
-
-  .card-img-top {
-    width: auto;
-    height: 100%;
-    object-fit: contain; /* ensures full image is visible */
+    height: 200px;
   }
 
   .card-title {
-    color: #000000;
+    font-size: 1.1rem;
   }
+}
 
-  @media (max-width: 768px) {
-    .custom-card {
-      max-width: 20rem;
-    }
+/* Back Arrow Style */
+.back-arrow {
+  position: fixed;
+  top: 100px;
+  /* Below navbar */
+  left: 20px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+}
 
-    .img-container {
-      height: 200px;
-    }
+.back-arrow:hover {
+  background-color: #198754;
+  color: #fff;
+  transform: scale(1.1);
+}
 
-    .card-title {
-      font-size: 1.1rem;
-    }
-  }
-
-  /* Back Arrow Style */
+@media (max-width: 768px) {
   .back-arrow {
-    position: fixed;
-    top: 100px; /* Below navbar */
-    left: 20px;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
+    top: 85px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
   }
-  
-  .back-arrow:hover {
-    background-color: #198754;
-    color: #fff;
-    transform: scale(1.1);
-  }
+}
 
-  @media (max-width: 768px) {
-      .back-arrow {
-          top: 85px;
-          left: 15px;
-          width: 40px;
-          height: 40px;
-      }
-  }
 /* --- MOBILE UI ENHANCEMENTS --- */
 
 /* 1. Mobile Navbar Polish */
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: rgba(255, 255, 255, 0.95); /* Glassmorphism-ish solid background */
+    background: rgba(255, 255, 255, 0.95);
+    /* Glassmorphism-ish solid background */
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
     margin-top: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
-  
+
   .nav-item {
     border-bottom: 1px solid #f0f0f0;
     padding: 10px 0;
@@ -322,75 +354,111 @@ footer .social-icon li i:hover {
   }
 
   .nav-link {
-      color: #333 !important; /* Ensure readable text on white mobile menu */
-      font-weight: 600;
-      font-size: 1.1rem;
+    color: #333 !important;
+    /* Ensure readable text on white mobile menu */
+    font-weight: 600;
+    font-size: 1.1rem;
   }
-  
+
   .nav-link:hover {
-      color: #198754 !important;
-      padding-left: 10px; /* Slide effect */
-      transition: all 0.3s ease;
+    color: #198754 !important;
+    padding-left: 10px;
+    /* Slide effect */
+    transition: all 0.3s ease;
   }
 }
 
 /* 2. Enhanced Cards for Mobile */
 @media (max-width: 768px) {
-  .custom-card, .category-card {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+
+  .custom-card,
+  .category-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
     margin-bottom: 20px;
   }
-  
-  .custom-card:active, .category-card:active {
-     transform: scale(0.98); /* Touch feedback */
-     transition: transform 0.1s;
+
+  .custom-card:active,
+  .category-card:active {
+    transform: scale(0.98);
+    /* Touch feedback */
+    transition: transform 0.1s;
   }
 
   .card-body h5 {
-      font-size: 1.25rem; /* Larger headings */
+    font-size: 1.25rem;
+    /* Larger headings */
   }
 
   /* Full width buttons on mobile */
   .btn {
-      width: 100%; 
-      display: block;
-      margin-bottom: 10px;
-      padding: 12px; /* Taller touch target */
-      font-size: 1.1rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px;
+    /* Taller touch target */
+    font-size: 1.1rem;
   }
 
   /* Adjust spacing */
   .container {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 /* 3. Floating WhatsApp Button (Mobile Only) */
 .whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 25px;
-    background: #25d366;
-    color: #FFF;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
-    display: flex; /* Centering */
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  display: flex;
+  /* Centering */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .whatsapp-float:hover {
-    background: #128c7e;
-    color: #fff;
-    transform: scale(1.1);
+  background: #128c7e;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Call Button Float */
+.call-float {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  background: #0d6efd;
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.call-float:hover {
+  background: #0b5ed7;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 
@@ -400,96 +468,105 @@ footer .social-icon li i:hover {
 
 /* 2. Testimonials Section */
 .testimonial-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    text-align: center;
-    margin: 20px;
-    position: relative;
-    border: 1px solid #f0f0f0;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  /* Reduced margin to rely on grid gaps, but kept small for shadow safety */
+  margin: 10px;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  height: calc(100% - 20px);
+  /* Ensure equal height in flex row minus margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testimonial-card i {
-    color: #ffc107; /* Gold stars */
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  color: #ffc107;
+  /* Gold stars */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .testimonial-quote {
-    font-style: italic;
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .testimonial-user {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 
 /* 3. About Us Redesign Styles */
 .about-hero {
-    background: url("./images/excel cover image.png") center center/cover no-repeat;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  background: url("./images/excel cover image.png") center center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* Glass effect overlay for text readability */
 .about-hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .about-hero h1 {
-    position: relative;
-    color: #fff;
-    z-index: 1;
-    font-size: 3rem;
-    font-weight: 800;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .timeline-item {
-    border-left: 3px solid #198754;
-    padding-left: 30px;
-    margin-bottom: 40px;
-    position: relative;
+  border-left: 3px solid #198754;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -11px;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 4px solid #198754;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #198754;
+  border-radius: 50%;
 }
 
 .stat-box {
-    text-align: center;
-    padding: 30px;
-    background: #f8f9fa;
-    border-radius: 12px;
-    transition: transform 0.3s;
+  text-align: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.3s;
 }
 
 .stat-box:hover {
-    transform: translateY(-5px);
-    background: #e9f7ef;
+  transform: translateY(-5px);
+  background: #e9f7ef;
 }
 
 .stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #198754;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #198754;
 }
-

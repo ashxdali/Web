@@ -32,14 +32,33 @@
 
   <title>Excel Batteries | Best Battery Shop in Calicut | Exide & Amaron Dealers</title>
 
+  <!-- CSS Libraries -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .category-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+
+    .category-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer a:hover {
+      color: #0dcaf0 !important;
+      /* Bootstrap cyan highlight */
+      transform: scale(1.1);
+    }
+  </style>
 
 </head>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <body style="background-color: rgb(255, 255, 255);">
   <!-- NAVBAR -->
@@ -49,18 +68,12 @@
       style="background: linear-gradient(90deg, #ffffff, hsl(124, 72%, 50%)); padding: 0.8rem 1rem;">
       <div class="container-fluid">
         <!-- Brand -->
-        <!-- <a class="navbar-brand fw-bold fs-4 text-uppercase" href="#" style="letter-spacing: 1px;">
-         Excel Batteries
-      </a> -->
-
         <a class="navbar-brand d-flex align-items-center fw-bold fs-4 text-uppercase" href="#"
-          style="letter-spacing: 1px; color: #fff;">
+          style="letter-spacing: 1px; color: #000;">
           <img src="images/excel_logo.png" alt="Excel Batteries Logo"
             style="height: 50px; width: auto; margin-right: 10px; border-radius: 5px;">
 
         </a>
-
-
 
         <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -71,67 +84,29 @@
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="About.html" class="nav-link active px-3 fw-semibold" href="#">About</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link active px-3 fw-semibold">About</a></li>
             <li class="nav-item"><a class="nav-link active px-3 fw-semibold" href="#prod">Products</a></li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle px-3 fw-semibold" href="#" role="button"
-                data-bs-toggle="dropdown">Vehicle</a>
-              <ul class="dropdown-menu shadow border-0 rounded-3">
-                <li><a class="dropdown-item" href="#">Two Wheeler</a></li>
-                <li><a class="dropdown-item" href="#">Four Wheeler</a></li>
-                <li><a class="dropdown-item" href="#">Commercial Vehicles</a></li>
-                <li><a class="dropdown-item" href="#">Passenger Vehicles</a></li>
-                <li><a class="dropdown-item" href="#">Inverter & Batteries</a></li>
-              </ul>
-            </li>
+
             <li class="nav-item"><a class="nav-link active px-3 fw-semibold" href="#contact">Contact Us</a></li>
           </ul>
 
           <!-- Right Side Icons -->
-          <!-- <div class="d-flex align-items-center">
-          <a href="https://wa.me/000000?text=Hello%20Excel%20Batteries%2C%20I%20want%20to%20know%20more%20about%20your%20products." class="me-3 text-success fs-5"><i class="bi bi-whatsapp"></i></a>
-          <a href="mailto:info@excelbatteries.com" class="me-3 text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
-          <a href="tel:+1234567890" class="text-light text-decoration-none d-flex align-items-center">
-            <i class="bi bi-telephone me-1 fs-5"></i>
-            <span>+91 000000</span>
-          </a>
-        </div> -->
-
-          <!-- Bootstrap Icons CDN (must be in <head>) -->
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
           <div class="d-flex align-items-center">
-            <!-- WhatsApp -->
-            <a href="https://wa.me/919876543210?text=Hello%20Excel%20Batteries%2C%20I%20want%20to%20know%20more%20about%20your%20products."
-              target="_blank" class="me-3 text-success fs-5">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-
-            <!-- Email -->
-            <a href="mailto:info@excelbatteries.com" class="me-3 text-light fs-5">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
-
-            <!-- Phone -->
-            <a href="tel:+919876543210" class="text-light text-decoration-none d-flex align-items-center">
+            <a href="https://wa.me/919048178116?text=Hello%20Excel%20Batteries" target="_blank"
+              class="me-3 text-success fs-5"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:excelbatteries@gmail.com" class="me-3 text-dark fs-5"><i
+                class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+919048178116" class="text-dark text-decoration-none d-flex align-items-center">
               <i class="bi bi-telephone me-1 fs-5"></i>
-              <span>+91 9876543210</span>
+              <span class="fw-bold d-none d-lg-block">+91 90481 78116</span>
             </a>
           </div>
-
-
 
         </div>
       </div>
     </nav>
   </header>
-
-
-
-
-
-
 
   <!-- SLIDER -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -170,11 +145,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
-
-
-  <!-- /ICONS -->
 
   <div class="container-fluid my-5 py-4" id="prod" style="background: linear-gradient(135deg, #f8f9fa, #e9f7ef);">
     <h4 class="text-center mb-4 fw-bold" style="color: #222;">Select Your Category</h4>
@@ -236,83 +206,6 @@
 
     </div>
   </div>
-
-  <style>
-    .category-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background: #fff;
-    }
-
-    .category-card:hover {
-      transform: translateY(-8px) scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- PARAGRAPH -->
-
-  <!-- 
-<div class="card container-fluid" style=" margin: 30px auto; padding: 25px; border-radius: 15px; 
-box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradient(135deg, #f9f9f9, #ffffff);">
-
-  <div class="card-body" style="text-align: center;">
-
-    <h2 style="color: #2c3e50; font-weight: 700; margin-bottom: 20px;">
-      Welcome to Our Legacy in Power Solutions
-    </h2>
-
-    <p style="font-size: 16px; line-height: 1.8; color: #444; text-align: justify;">
-      Our journey began in <b>1969</b>, with a humble auto electrical shop in Calicut, 
-      run with just two dedicated hands and a big vision. In those early days, we specialized 
-      in reconditioning hard rubber automotive batteries, setting the foundation for what would later 
-      become a trusted name in the industry.
-    </p>
-
-    <p style="font-size: 16px; line-height: 1.8; color: #444; text-align: justify;">
-      As the demand for reliable power grew, we launched our very own line of batteries under the brand 
-      <b>EXCEL</b>, proudly manufacturing automotive batteries with a passionate team of 40 skilled workers. 
-      This marked a turning point in our growth and reputation within the community.
-    </p>
-
-    <p style="font-size: 16px; line-height: 1.8; color: #444; text-align: justify;">
-      By the year 2000, we decided to discontinue manufacturing hard rubber batteries due to environmental 
-      concerns and infrastructural changes in our locality. Instead of stepping back, we adapted to the 
-      evolving needs of the market by partnering with established manufacturers and sourcing top-quality batteries.
-    </p>
-
-    <p style="font-size: 16px; line-height: 1.8; color: #444; text-align: justify;">
-      Today, we proudly serve as a <b>channel partner of JC Batteries and Power Plus Batteries</b>, along with 
-      offering a wide range of products from many leading brands. With over five decades of experience, we continue 
-      to provide customers with dependable, long-lasting, and eco-friendly battery solutions.
-    </p>
-
-    <p style="font-size: 16px; line-height: 1.8; color: #444; text-align: justify;">
-      From a small workshop to a trusted power partner, our story is one of 
-      <b>dedication, innovation, and commitment</b>. As we move forward, our promise remains the same — to keep powering 
-      your journey with <b>trust, quality, and excellence</b>.
-    </p>
-
-  </div>
-</div> -->
-
-
-
-
-
 
   <!-- Company About Section -->
   <section style="background: linear-gradient(135deg, #f9fafb, #eef2f3); padding: 70px 20px;">
@@ -393,21 +286,6 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     </style>
   </section>
 
-
-
-
-  <!-- <company history> -->
-  <!-- <section class="quote-banner text-center text-md-start my-5">
-  <div class="quote-overlay d-flex flex-column justify-content-center align-items-center align-items-md-start text-white">
-    <I><h2 class="fw-bold mb-3 text-shadow">POWERING GENERATIONS WITH TRUST</h2></I>
-    <p class="lead mb-0 text-shadow">
-      From a humble workshop in 1969 to a trusted power partner today — 
-      we continue to energize your journey with excellence, reliability, and innovation.
-    </p>
-  </div>
-</section> -->
-
-
   <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-6">
@@ -425,12 +303,7 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     </div>
   </div>
 
-
-
-
-
   <!-- TRUSTED PARTNERS -->
-
   <div style="max-width: 1000px; margin: 50px auto; text-align: center; font-family: Arial, sans-serif;">
     <h2 style="color: #2c3e50; margin-bottom: 20px;">🤝 Our Trusted Partners</h2>
     <p style="color: #555; font-size: 1rem; margin-bottom: 30px;">
@@ -460,7 +333,6 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
           style="max-width: 100%; height: 80px; object-fit: contain;">
       </div>
 
-
       <!-- Partner 4 -->
       <div
         style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; width: 180px;">
@@ -468,17 +340,8 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
           style="max-width: 100%; height: 80px; object-fit: contain;">
       </div>
 
-
-
     </div>
   </div>
-
-
-
-
-
-
-  <!-- <img src="images/homepgbanner.png " style="width: 100%;"  alt="..."> -->
 
   <!-- TESTIMONIALS -->
   <section style="padding: 60px 0; background: #fff;" data-aos="fade-up">
@@ -486,12 +349,62 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
       <h5 class="text-success fw-bold text-uppercase mb-3">Customer Stories</h5>
       <h2 class="fw-bold mb-5" style="color: #2c3e50;">Trusted by Thousands</h2>
 
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Desktop View: Grid (Visible on LG screens and up) -->
+      <div class="row d-none d-lg-flex justify-content-center g-4">
+        <!-- Review 1 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card h-100 d-flex flex-column">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote">"Excellent service! I changed my car battery here, and the staff was
+              super helpful. They even checked my alternator for free. Highly recommended!"</p>
+            <p class="testimonial-user mt-auto">- Rahul K., Calicut</p>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card h-100 d-flex flex-column">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote">"Best battery shop in town. I bought an inverter battery for my home, and
+              the price was very competitive compared to other shops."</p>
+            <p class="testimonial-user mt-auto">- Anjali Menon</p>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card h-100 d-flex flex-column">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote">"Quick and professional. They replaced my scooter battery in 10 minutes.
+              Good collection of Amaron and Exide."</p>
+            <p class="testimonial-user mt-auto">- Mohammed Fayis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View: Carousel (Visible on MD screens and below) -->
+      <div id="testimonialCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Item 1 -->
           <div class="carousel-item active">
             <div class="row justify-content-center">
-              <div class="col-md-8">
+              <div class="col-12 col-md-10">
                 <div class="testimonial-card">
                   <div>
                     <i class="bi bi-star-fill"></i>
@@ -510,7 +423,7 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
           <!-- Item 2 -->
           <div class="carousel-item">
             <div class="row justify-content-center">
-              <div class="col-md-8">
+              <div class="col-12 col-md-10">
                 <div class="testimonial-card">
                   <div>
                     <i class="bi bi-star-fill"></i>
@@ -529,7 +442,7 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
           <!-- Item 3 -->
           <div class="carousel-item">
             <div class="row justify-content-center">
-              <div class="col-md-8">
+              <div class="col-12 col-md-10">
                 <div class="testimonial-card">
                   <div>
                     <i class="bi bi-star-fill"></i>
@@ -579,81 +492,7 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     </div>
   </section>
 
-
-
-
   <!-- FOOTER-->
-  <!-- 
-    <footer >
-        <div class="footer-top" id="contact">
-            <div class="container">
-                <div class="footer-day-time">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <ul>
-                                <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
-                                <li>Sunday: 8:00 AM - 12:00 PM</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="phone-no">
-                                <a href="tel:+91 906" style="text-decoration: none;"><i class="fa fa-mobile" aria-hidden="true"></i><h3>Call   +90016</h3></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        
-                        <h4>Adss</h4>
-                        <h6>Sarod</h6>
-                        <h6>Erm</h6>
-                        <h6>Koode</h6>
-                        <h6>Kla</h6>
-                        <h6>670</h6>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Information</h4>
-                        <ul class="address1">
-                            <li><i class="fa fa-map-marker"></i>Lorem Ipsum 132 xyz Lorem Ipsum</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:#">exceles@gmail.com</a></li>
-                            <li><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:12 34 56 78 90">+91 900000</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Follow us</h4>
-                        <ul class="social-icon">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <p class="copyright text-uppercase">Copyright © 2035
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
-        
-     -->
-
-
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <footer style="background: #0d0d0d; color: #f1f1f1; padding: 60px 0 20px;">
     <div class="container">
       <div class="row">
@@ -708,31 +547,10 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     </div>
   </footer>
 
-  <!-- Hover Effects -->
-  <style>
-    footer a:hover {
-      color: #0dcaf0 !important;
-      /* Bootstrap cyan highlight */
-      transform: scale(1.1);
-    }
-  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- Floating Call Button -->
+  <a href="tel:+919048178116" class="call-float" aria-label="Call Us">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
 
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/919048178116?text=Hello%20Excel%20Batteries%2C%20I%20want%20to%20know%20more%20about%20your%20products."
@@ -740,6 +558,10 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     <i class="bi bi-whatsapp"></i>
   </a>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
   <!-- AOS Animation Library -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -749,7 +571,5 @@ box-shadow: 0 6px 20px rgba(0,0,0,0.15); border: none; background: linear-gradie
     });
   </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </html>
