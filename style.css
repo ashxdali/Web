@@ -656,22 +656,22 @@ footer .social-icon li i:hover {
 
 /* --- PRODUCT PAGE - SPLIT TYPOGRAPHY HEADER --- */
 .section-header-split {
-  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 300;
-  color: #333;
+  color: #444;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   margin-top: 2rem;
   display: block;
 }
 
 .section-header-split strong {
   font-weight: 800;
-  color: #27ae60;
-  /* Premium Eco-Green */
-  border-left: 4px solid #27ae60;
+  color: #198754;
+  /* Match site theme green */
+  border-left: 4px solid #198754;
   padding-left: 20px;
   margin-left: 15px;
   display: inline-block;
